@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends("layouts.app")
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tambah Data Post - SantriKoding.com</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-</head>
+@section('title', 'Create Posts')
 
-<body>
-  @include('partials.navbar')
-  <div class="container mb-5">
+@section('content')
     <div class="row pt-5 mt-3">
       <div class="col">
         <nav aria-label="breadcrumb">
@@ -88,16 +78,8 @@
         </div>
       </div>
     </div>
-  </div>
-  @include('partials.footer')
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
   <script>
     CKEDITOR.replace('content');
   </script>
-</body>
-
-</html>
+@endsection
